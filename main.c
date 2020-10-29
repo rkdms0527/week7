@@ -2,13 +2,8 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-int all_files;
-extern void sub(); //sub 가져오겠다 
-
-int main(void)
+int factorial(int n)
 {
-	sub();
-	printf("%d\n", all_files);
-	return 0;
+	if (n <= 1) return (1); //끝나는 조건 
+	else return (n * factorial(n-1) );
 }
- 
